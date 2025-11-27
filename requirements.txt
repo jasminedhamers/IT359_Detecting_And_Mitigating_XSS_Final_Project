@@ -1,1 +1,6 @@
+# Project Dependencies: Tools and Platforms for XSS Lab Environment
 
+bWAPP (Bee-box Web Application)
+XAMPP (Web Server)
+Burp Suite Community Edition (Interception Proxy)
+Windows 11 Virtual Machine
