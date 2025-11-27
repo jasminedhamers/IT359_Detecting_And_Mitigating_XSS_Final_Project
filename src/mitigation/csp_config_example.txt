@@ -1,0 +1,10 @@
+# Configuration for Content Security Policy (CSP)
+# This file is an example of the security header configured on the server (e.g., in a .htaccess file).
+
+# CSP Header: Default-Src, Script-Src, and Object-Src Directives
+# This policy instructs the browser to only load scripts from the current domain ('self') 
+# and explicitly prevents inline scripts and eval() functions.
+
+Content-Security-Policy: default-src 'self'; 
+                         script-src 'self'; 
+                         object-src 'none';
