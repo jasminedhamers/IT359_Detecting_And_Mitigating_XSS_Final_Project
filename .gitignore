@@ -1,1 +1,21 @@
+# OS and Environment Files 
+.DS_Store             # Mac OS X folder metadata
+Thumbs.db             # Windows image file cache
 
+# General Development Artifacts 
+*.log
+*.bak
+*.tmp
+
+# Virtual Machine and Web Server Artifacts 
+/vendor/              # Common directory for PHP dependencies
+composer.lock
+
+# PHP-Specific Ignores 
+*.phar
+
+# Compressed Files 
+*.zip
+*.tar
+*.rar
+*.7z
