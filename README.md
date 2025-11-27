@@ -1,5 +1,3 @@
-# IT359_Detecting_And_Mitigating_XSS_Final_Project
-
 # Cross-Site Scripting (XSS) Vulnerability Analysis and Mitigation
 
 ## Video Presentation
