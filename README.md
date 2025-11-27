@@ -57,7 +57,7 @@ This section details the steps used to successfully exploit both Reflected and S
 3.  **Payload Injection:** Modify the request in Burp Suite, replacing the blog entry content with the malicious script payload (for example, “<script>alert('Stored XSS');</script>”). 
 4.  **Execution:** Forward the modified request. When you or any other user subsequently views the affected page, the stored script will load and execute, confirming the more severe Stored XSS vulnerability.
 
-### C. Mitigation and Testing
+### Mitigation and Testing
 
 Mitigation was implemented using a multi-layered, defense-in-depth approach, with all custom implementation files located within the “src/mitigation/” directory. 
 
