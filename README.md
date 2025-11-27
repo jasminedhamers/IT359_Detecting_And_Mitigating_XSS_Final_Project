@@ -61,15 +61,15 @@ This section details the steps used to successfully exploit both Reflected and S
 
 Mitigation was implemented using a multi-layered, defense-in-depth approach, with all custom implementation files located within the “src/mitigation/” directory. 
 
-* **Input Validation (Server-Side):** 
+**Input Validation (Server-Side):** 
 * **File Reference:** src/mitigation/xss_input_filter.php 
 * **Function:** This script implements server-side filtering to sanitize or reject hostile user input before it is processed by the application. 
 
-* **Output Encoding:** 
+**Output Encoding:** 
 * **File Reference:** src/mitigation/xss_output_encoder.php
 * **Function:** All dynamic, user-controlled data is passed through this function prior to being rendered in the browser, neutralizing the data by converting special characters (like `<`, `>`, and `/`) into their HTML entity equivalents. 
 
-* **Content Security Policy (CSP):** 
+**Content Security Policy (CSP):** 
 * **Configuration Reference:** Server configuration via an .htaccess file (or equivalent). 
 * **Function:** A restrictive CSP header was configured to whitelist trusted sources for scripts and styles, providing a final layer of defense at the browser level against unauthorized code execution. 
 
